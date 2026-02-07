@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FiveM Server Hjemmeside</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+<!-- Header -->
+<header class="bg-gray-800 shadow-md">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold">Din FiveM Server</h1>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:text-yellow-400">Forside</a></li>
+        <li><a href="#server" class="hover:text-yellow-400">Server Info</a></li>
+        <li><a href="#downloads" class="hover:text-yellow-400">Downloads</a></li>
+        <li><a href="#community" class="hover:text-yellow-400">Community</a></li>
+        <li><a href="#shop" class="hover:text-yellow-400">Shop</a></li>
+        <li><a href="#support" class="hover:text-yellow-400">Support</a></li>
+        <li><a href="#login" class="hover:text-yellow-400">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?city');">
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+    <h2 class="text-5xl font-bold mb-4">Velkommen til Din FiveM Server</h2>
+    <p class="mb-6 text-lg">Spil, chat, og deltag i vores community</p>
+    <a href="#downloads" class="bg-yellow-500 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Download nu</a>
+  </div>
+</section>
+
+<!-- Server Info -->
+<section id="server" class="py-16 bg-gray-800">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Server Info</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-700 p-6 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4">Online Spillere</h3>
+        <p id="onlinePlayers" class="text-3xl font-bold">12/64</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4">Server Uptime</h3>
+        <p class="text-3xl font-bold">99.9%</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4">Version</h3>
+        <p class="text-3xl font-bold">v1.0.0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Downloads -->
+<section id="downloads" class="py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Downloads</h2>
+    <div class="flex flex-col md:flex-row justify-center gap-8">
+      <a href="#" class="bg-yellow-500 px-6 py-4 rounded-lg font-bold hover:bg-yellow-400 transition">Download FiveM</a>
+      <a href="#" class="bg-yellow-500 px-6 py-4 rounded-lg font-bold hover:bg-yellow-400 transition">Server Files</a>
+      <a href="#" class="bg-yellow-500 px-6 py-4 rounded-lg font-bold hover:bg-yellow-400 transition">Mods & Scripts</a>
+    </div>
+  </div>
+</section>
+
+<!-- Community -->
+<section id="community" class="py-16 bg-gray-800">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Community</h2>
+    <p class="mb-6">Deltag i vores forum og events. Bliv en del af fællesskabet!</p>
+    <a href="#" class="bg-yellow-500 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Gå til forum</a>
+  </div>
+</section>
+
+<!-- Shop -->
+<section id="shop" class="py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Shop</h2>
+    <div class="flex flex-col md:flex-row justify-center gap-8">
+      <div class="bg-gray-700 p-6 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4">VIP</h3>
+        <p class="mb-4">Få adgang til eksklusive features.</p>
+        <button class="bg-yellow-500 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Køb nu</button>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4">Skins</h3>
+        <p class="mb-4">Unikke karakter skins og biler.</p>
+        <button class="bg-yellow-500 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Køb nu</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Support -->
+<section id="support" class="py-16 bg-gray-800">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Support</h2>
+    <p class="mb-6">Har du spørgsmål? Opret en ticket eller læs vores FAQ.</p>
+    <a href="#" class="bg-yellow-500 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Åbn ticket</a>
+  </div>
+</section>
+
+<!-- Login -->
+<section id="login" class="py-16">
+  <div class="container mx-auto max-w-md mx-auto bg-gray-800 p-8 rounded-lg">
+    <h2 class="text-3xl font-bold mb-6 text-center">Login</h2>
+    <form class="flex flex-col gap-4">
+      <input type="text" placeholder="Brugernavn" class="p-3 rounded bg-gray-700">
+      <input type="password" placeholder="Password" class="p-3 rounded bg-gray-700">
+      <button class="bg-yellow-500 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Login</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-6 text-center">
+  <p>&copy; 2026 Din FiveM Server. Alle rettigheder forbeholdes.</p>
+</footer>
+
+</body>
+</html>
